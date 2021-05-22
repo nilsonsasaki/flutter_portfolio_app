@@ -5,9 +5,9 @@ import 'package:flutter_portfolio_app/widgets/lateral_tab.dart';
 class FirstScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      color: Colors.white,
-      child: SafeArea(
+    return Scaffold(
+      backgroundColor: Colors.white,
+      body: SafeArea(
         child: Column(
           children: [
             Expanded(
