@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
 import 'package:flutter_portfolio_app/widgets/lateral_tab.dart';
+import 'package:flutter_portfolio_app/widgets/bottom_button.dart';
 
 class FirstScreen extends StatelessWidget {
   @override
@@ -50,40 +51,20 @@ class FirstScreen extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.stretch,
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Expanded(
-                      child: Container(
-                        decoration: BoxDecoration(
-                            color: Colors.blue,
-                            borderRadius: BorderRadius.circular(10.0)),
-                        child: TextButton(
-                          onPressed: () {
-                            print('Button Pressed');
-                          },
-                          child: Text(
-                            'Chat',
-                            style: TextStyle(color: Colors.white, fontSize: 18),
-                          ),
-                        ),
-                      ),
+                    BottomButton(
+                      text: 'Chat',
+                      onPressed: () {
+                        print('Chat button pressed');
+                      },
                     ),
                     SizedBox(
                       width: 20.0,
                     ),
-                    Expanded(
-                      child: Container(
-                        decoration: BoxDecoration(
-                            color: Colors.blue,
-                            borderRadius: BorderRadius.circular(10.0)),
-                        child: TextButton(
-                          onPressed: () {
-                            print('Button Pressed');
-                          },
-                          child: Text(
-                            'Message',
-                            style: TextStyle(color: Colors.white, fontSize: 18),
-                          ),
-                        ),
-                      ),
+                    BottomButton(
+                      text: 'Message',
+                      onPressed: () {
+                        print('Message button pressed');
+                      },
                     ),
                   ],
                 ),
