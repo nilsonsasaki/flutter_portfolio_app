@@ -5,12 +5,10 @@ class LateralTab extends StatelessWidget {
   LateralTab({
     @required this.isLeft,
     @required this.text,
-    this.borderRadius = 10.0,
   });
 
   final bool isLeft;
   final String text;
-  final double borderRadius;
 
   @override
   Widget build(BuildContext context) {
@@ -23,12 +21,12 @@ class LateralTab extends StatelessWidget {
           color: Colors.lightBlue,
           borderRadius: isLeft
               ? BorderRadius.only(
-                  topRight: Radius.circular(borderRadius),
-                  bottomRight: Radius.circular(borderRadius),
+                  topRight: Radius.circular(kLateralTabBorderRadius),
+                  bottomRight: Radius.circular(kLateralTabBorderRadius),
                 )
               : BorderRadius.only(
-                  topLeft: Radius.circular(borderRadius),
-                  bottomLeft: Radius.circular(borderRadius),
+                  topLeft: Radius.circular(kLateralTabBorderRadius),
+                  bottomLeft: Radius.circular(kLateralTabBorderRadius),
                 ),
         ),
         child: RotatedBox(
