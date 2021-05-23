@@ -23,6 +23,9 @@ class FirstScreen extends StatelessWidget {
                       LateralTab(
                         isLeft: true,
                         text: 'Portfolio',
+                        onPressed: () {
+                          print('Portfolio tab pressed');
+                        },
                       ),
                       Flexible(child: Container(), flex: 5),
                     ],
@@ -34,6 +37,9 @@ class FirstScreen extends StatelessWidget {
                       LateralTab(
                         isLeft: false,
                         text: 'Resume',
+                        onPressed: () {
+                          print('Resume tab pressed');
+                        },
                       ),
                       Flexible(child: Container(), flex: 5),
                     ],
